@@ -1,0 +1,186 @@
+<header>
+    <nav class="navbar navbar-expand-lg " id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">POLO</a>
+            <button class="navbar-toggler btn-toogle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse nav navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" routerLink="/home/homes">HOME</a>
+                    </li>
+                    <li class="nav-item nav">
+                        <a class="nav-link" routerLink="/index/index">INDEX</a>
+                        <ul class="ul">
+                            <li><a routerLink="">
+                                    <p>inside</p><span><i class="fas fa-caret-right"></i></span>
+                                </a></li>
+                            <li><a routerLink="">
+                                    <p>insidelorem</p><span><i class="fas fa-caret-right"></i></span>
+                                </a></li>
+                            <li><a routerLink="">
+                                    <p>insidelorem</p><span><i class="fas fa-caret-right"></i></span>
+                                </a></li>
+                            <li><a routerLink="">
+                                    <p>insidelorem</p><span><i class="fas fa-caret-right"></i></span>
+                                </a></li>
+                            <li><a routerLink="">
+                                    <p>insidelorem</p><span><i class="fas fa-caret-right"></i></span>
+                                </a></li>
+                            <li><a routerLink="">
+                                    <p>insidelorem</p><span><i class="fas fa-caret-right"></i></span>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/contact/contact_page">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/about/about_page">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/portfolio/portfolio_page">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/single/single_page">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/single/single_page">SHOP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+<section class="banner">
+    <div class="container">
+     <div class="row justify-content-center">
+       <div class="col-md-10">
+           <div class="banner-box">
+        <h1>Contact Us</h1>
+        <p>The most happiest time of the day!.</p>
+        <ul>
+            <li><a routerLink="">Home<i class="fa-solid fa-angle-right"></i></a></li>
+            <li><a routerLink="">Pages<i class="fa-solid fa-angle-right"></i></a></li>
+            <li><a routerLink="">Contact us</a></li>
+        </ul>
+        </div>
+       </div>
+     </div>
+    </div>
+   </section>
+   <section class="touch">
+     <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-6 col-md-12">
+           <div class="left-box">
+              <h1>
+               GET IN TOUCH
+              </h1>
+              <p>
+                  The most happiest time of the day!. Suspendisse 
+                  condimentum porttitor cursus. Duis nec nulla turpis.
+                   Nulla lacinia laoreet odio, non lacinia nisl malesuada vel
+                   . Aenean malesuada fermentum bibendum.
+              </p>
+              <form #formcontact="ngForm" (ngsubmit)="formcontact.form.valid">
+                <div class="form-name">
+                    <div class="name">
+                      <label>Name</label>
+                      <input type="text" name="name" #name="ngModel" [(ngModel)]="formvalue.name"  placeholder="Enter your name"
+                       required minlength="2" maxlength="200">
+                      <span *ngIf="name.invalid && error">
+                        <span *ngIf="name.errors?.['required']">
+                         Name is required
+                        </span>
+                        <span *ngIf="name.errors?.['minlength']">
+                         Minlength is 2 
+                        </span>
+                        <span *ngIf="name.errors?.['maxlength']">
+                           Maxlength is 200.
+                          </span>
+                      </span>
+                    </div>
+                    <div class="email">
+                       <label>Email</label>
+                       <input type="text" name="email" #email="ngModel" 
+                       [(ngModel)]="formvalue.email"  placeholder="Enter your Email" required
+                       pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+                       >
+                       <span *ngIf="email.invalid && error ">
+                         <span *ngIf="email.errors?.['required']">
+                           Please enter ur email
+                         </span>
+                         <span *ngIf="email.errors?.['pattern']">
+                          Please enter a correct email 
+                         </span>
+                       </span>
+                    </div>
+                </div>
+                <div class="email">
+                      <label>Your Subject</label>
+                      <input placeholder="Subject..." type="text" required name="subject" #subject="ngModel" 
+                       [(ngModel)]="formvalue.subject" minlength="2" maxlength="100"
+                      >
+                      <span *ngIf="subject.invalid && error ">
+                      <span *ngIf="subject.errors?.['required']">
+                      Subject is required                       
+                     </span>
+                     <span *ngIf="subject.errors?.['minlength']">
+                       Minlength is 2
+                     </span>
+                     <span *ngIf="subject.errors?.['maxlength']">
+                       Minlength is 100
+                     </span>
+                      </span>
+                </div>
+                <div class="message">
+                   <label>Message</label>
+                   <textarea class="form-control"  rows="5" placeholder="Enter ur message" id="floatingTextarea2" style="height: 100px"
+                   required minlength="2" maxlength="200"  name="message" #message="ngModel" [(ngModel)]="formvalue.message"
+                   ></textarea>
+                   <span *ngIf="message.invalid && error">
+                   <span *ngIf="message.errors?.['required']">
+                   Please enter a message
+                   </span>
+                   <span *ngIf="message.errors?.['minlength']">
+                        Minlength is 2
+                   </span>
+                   <span *ngIf="message.errors?.['maxlength']">
+                     Maxlength is 200
+                   </span>
+                   </span>
+             </div>
+             <button type="submit" (click)="clickme(formcontact.form.invalid)"><i class="fa fa-paper-plane"></i>Send Message</button>
+              </form>
+           </div>
+          </div>
+          <div class="col-lg-5 col-md-12">
+               <div class="right-box">
+                   <h1>ADDRESS & MAP</h1>
+                <div class="text-box">
+                  <div class="box-a">
+                   <h3>Polo, Inc.</h3>
+                   <p>
+                       795 Folsom Ave, Suite 600<span>San Francisco, CA 94107</span>
+                       P: (123) 456-7890
+                   </p>
+                  </div>
+                  <div class="box-a">
+                   <h3>Polo Office</h3>
+                   <p>
+                       795 Folsom Ave, Suite 600<span>San Francisco, CA 94107</span>
+                       P: (123) 456-7890
+                   </p>
+                  </div>
+                </div>
+                <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sin!4v1646375883041!5m2!1sen!2sin" 
+                width="600" height="450" style="border:0; width: 100%;" allowfullscreen="" loading="lazy"></iframe>
+               </div>
+          </div>
+        </div>
+     </div>
+   </section>

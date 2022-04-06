@@ -1,0 +1,278 @@
+<header>
+    <nav class="navbar navbar-expand-lg " id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" routerLink="">POLO</a>
+            <button class="navbar-toggler btn-toogle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse nav navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" routerLink="/home/homes">HOME</a>
+                    </li>
+                    <li class="nav-item nav">
+                        <a class="nav-link" routerLink="/index/index">INDEX</a>
+                        <ul class="ul">
+                            <li><a routerLink="">
+                                    <p>inside</p><span><i class="fas fa-caret-right"></i></span>
+                                </a></li>
+                            <li><a routerLink="">
+                                    <p>insidelorem</p><span><i class="fas fa-caret-right"></i></span>
+                                </a></li>
+                            <li><a routerLink="">
+                                    <p>insidelorem</p><span><i class="fas fa-caret-right"></i></span>
+                                </a></li>
+                            <li><a routerLink="">
+                                    <p>insidelorem</p><span><i class="fas fa-caret-right"></i></span>
+                                </a></li>
+                            <li><a routerLink="">
+                                    <p>insidelorem</p><span><i class="fas fa-caret-right"></i></span>
+                                </a></li>
+                            <li><a routerLink="">
+                                    <p>insidelorem</p><span><i class="fas fa-caret-right"></i></span>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/contact/contact_page">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/about/about_page">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/portfolio/portfolio_page">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/single/single_page">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/single/single_page">SHOP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+<section class="banner">
+    <div class="container">
+     <div class="row justify-content-center">
+       <div class="col-md-10">
+           <div class="banner-box">
+        <h1>Portfolio Grid - Sidebar</h1>
+        <!-- <p>The most happiest time of the day!.</p> -->
+        <ul>
+            <li><a routerLink="">Home<i class="fa-solid fa-angle-right"></i></a></li>
+            <li><a routerLink="">Pages<i class="fa-solid fa-angle-right"></i></a></li>
+            <li><a routerLink="">Contact us</a></li>
+        </ul>
+        </div>
+       </div>
+     </div>
+    </div>
+   </section>
+   <section class="bar">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-md-12">
+               <div class="bar-inside">
+               <ul>
+                   <li><a routerLink="/portfolio/portfoliopage"routerLinkActive="active"class="active" >No space</a></li>
+                   <li><a routerLink="/"routerLinkActive="active">With space</a></li>
+                   <li><a routerLink="">Title</a></li>
+                   <li><a routerLink="">Title & Description</a></li>
+                   <li><a routerLink="">Shadow</a></li>
+                   <li><a routerLink="">Outline</a></li>
+                   <li><a routerLink="">Grey background</a></li>
+               </ul>
+               </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+   </section>
+   <section class="main-section">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-12 col-lg-8">
+              <div class="left-box">
+                   <div class="bar-inside">
+                       <ul>
+                           <li><a routerLink="/portfolio/portfoliopage"routerLinkActive="active"class="active" >No space</a></li>
+                           <li><a routerLink="/"routerLinkActive="active">With space</a></li>
+                           <li><a routerLink="">Title</a></li>
+                           <li><a routerLink="">Title & Description</a></li>
+                           <li><a routerLink="">Shadow</a></li>
+                       </ul>
+                       </div>
+                       <div class="img-box-a">
+                           <div class="row">
+                               <div class="col-md-4">
+                                   <div class="img-box">
+                                       <owl-carousel-o [options]="customOptions">
+                                           <ng-template carouselSlide><img src="../../../assets/image/hom-a.jpg" class="img-fluid">
+                                           </ng-template>
+                                           <ng-template carouselSlide><img src="../../../assets/image/cup-img.jpg" class="img-fluid">
+                                           </ng-template>
+                                       </owl-carousel-o>
+                                   </div>
+                               </div>
+                               <div class="col-md-4">
+                                   <div class="img-box">
+                                       <img src="../../../assets/image/b-img.jpg" class="img-fluid img">
+                                       <div class="text-overlay">
+                                           <a routerLink=""><i class="fa fa-expand"></i></a>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-md-4">
+                                   <div class="img-box">
+                                       <img src="../../../assets/image/red.jpg" class="img-fluid img">
+                                       <div class="text-overlay-b">
+                                           <a routerLink="">LET'S GO OUTSIDE
+                                               <span> Illustrations / Graphics</span></a>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="col-md-4">
+                                   <div class="img-box">
+                                       <img src="../../../assets/image/b-img.jpg" class="img-fluid img">
+                                       <div class="text-overlay">
+                                           <a routerLink=""><i class="fa fa-expand"></i></a>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-md-4">
+                                   <div class="img-box">
+                                       <img src="../../../assets/image/red.jpg" class="img-fluid img">
+                                       <div class="text-overlay-b">
+                                           <a routerLink="">LET'S GO OUTSIDE
+                                               <span> Illustrations / Graphics</span></a>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-md-4">
+                                   <div class="img-box">
+                                       <owl-carousel-o [options]="customOptions">
+                                           <ng-template carouselSlide><img src="../../../assets/image/hom-a.jpg" class="img-fluid">
+                                           </ng-template>
+                                           <ng-template carouselSlide><img src="../../../assets/image/cup-img.jpg" class="img-fluid">
+                                           </ng-template>
+                                       </owl-carousel-o>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="col-md-4">
+                                   <div class="img-box">
+                                       <img src="../../../assets/image/b-img.jpg" class="img-fluid img">
+                                       <div class="text-overlay">
+                                           <a routerLink=""><i class="fa fa-expand"></i></a>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+              </div>
+         </div>
+         <div class="col-md-12 col-lg-4">
+             <div class="right-box">
+                 <div class="recent-post">
+                     <h2>RECENT POSTS</h2>
+                     <div class="box-a">
+                        <div class="img-box">
+                         <img src="../../../../assets/image/recent-post.jpg" class="img-fluid">
+                        </div>
+                        <div class="text-box">
+                         <p>A true story, that  never <span> been told!</span></p>
+                          <span class="clock">
+                              <i class="icon-clock"></i>
+                              6m ago
+                          </span>
+                          <span class="category">
+                             <i class="fa fa-tag"></i>
+                             Technology
+                          </span>
+                        </div>
+                     </div>
+                     <div class="box-a">
+                       <div class="img-box">
+                        <img src="../../../../assets/image/second-port.jpg" class="img-fluid">
+                       </div>
+                       <div class="text-box">
+                        <p>A true story, that never <span>  been told!</span></p>
+                         <span class="clock">
+                             <i class="icon-clock"></i>
+                             6m ago
+                         </span>
+                         <span class="category">
+                            <i class="fa fa-tag"></i>
+                            Technology
+                         </span>
+                       </div>
+                    </div>
+                    <div class="box-a">
+                       <div class="img-box">
+                        <img src="../../../../assets/image/third.jpg" class="img-fluid">
+                       </div>
+                       <div class="text-box">
+                        <p>A true story, that never<span>  been told!</span></p>
+                         <span class="clock">
+                             <i class="icon-clock"></i>
+                             6m ago
+                         </span>
+                         <span class="category">
+                            <i class="fa fa-tag"></i>
+                            Technology
+                         </span>
+                       </div>
+                    </div>
+                    <hr>
+                 
+                 </div>
+                 <div class="tweets">
+                      <h2>RECENT TWEETS</h2>
+                      <div class="inner-tweets">
+
+                      </div>
+                      <hr>
+                 </div>
+                 <div class="tag">
+                    <div class="tag-inner">
+                        <h2>TAGS</h2>
+                        <ul>
+                            <li><a routerLink="">Design</a></li>
+                            <li> <a routerLink="">Portfolio</a></li>
+                        </ul>
+                        <ul>
+                            <li><a routerLink="">Digital</a></li>
+                            <li><a routerLink="">Branding</a></li>
+                        </ul>
+                        <ul>
+                            <li><a routerLink="">HTML</a></li>
+                            <li><a routerLink="">Clean</a></li>
+                        </ul>
+                        <ul>
+                            <li><a routerLink="">Peace</a></li>
+                            <li> <a routerLink="">Css3</a></li>
+                            <li><a routerLink="">Jquery</a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                 </div> 
+                 <div class="news">
+                     <h2>NEWSLETTER</h2>
+                     <p>Stay informed on our latest news!</p>
+                     <div class="input">
+                      <input placeholder="Enter your Email">
+                      <button><i class="fa fa-paper-plane"></i></button>
+                     </div>
+                 </div>
+             </div>
+         </div>
+       </div>
+     </div>
+   </section>
